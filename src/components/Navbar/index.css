@@ -1,0 +1,25 @@
+.navbar__active {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+    border-bottom: 4px solid var(--my-primary-color);
+}
+
+.navbar__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navbar__item {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.navbar__item:hover {
+    background: var(--my-primary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

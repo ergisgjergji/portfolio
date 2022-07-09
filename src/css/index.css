@@ -5,18 +5,22 @@
 body {
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
-}
-
-#root {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 
     background: #7F7FD5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: fixed;
+}
+
+#root {
+    width: 100%;
+    height: 90%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 a, 
