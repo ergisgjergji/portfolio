@@ -1,0 +1,4 @@
+:root {
+    --my-primary-color: #86a6e6;
+    --my-gradient-color: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

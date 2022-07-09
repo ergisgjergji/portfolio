@@ -1,0 +1,30 @@
+.app__sidebar {
+    background-color: #fff;
+}
+
+.sidebar__avatar {
+    width: 120px;
+    height: 110px;
+    object-fit: contain;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+.sidebar__name {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.sidebar__item {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1.05rem;
+}
+
+.btn__email {
+    background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all .3s ease-in-out;
+}
+    .btn__email:hover {
+        /* transform: scale(1.05); */
+    }
