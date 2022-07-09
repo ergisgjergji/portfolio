@@ -15,7 +15,8 @@ const App = () => {
           <div className='col-12 col-lg-9 h-100 mt-4 mt-lg-0'>
             <div className='app__main-content bg-white shadow h-100 rounded p-3'>
 
-              <Navbar />              
+              <Navbar />
+              In progress...
 
             </div>
           </div>
