@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 
-import avatar from '../../assets/icons/avatar.svg';
+import avatar from '../../assets/avatar.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown, faLocationDot, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -20,13 +20,14 @@ const Sidebar = () => {
     return (
         <div className='app__sidebar shadow h-100 overflow-auto rounded p-2 text-center'>
             
-            <img src={avatar} alt='avatar' className='sidebar__avatar' />
+            {/* <img src={avatar} alt='avatar' className='sidebar__avatar border shadow' /> */}
+            <img src={require('../../assets/avatar.jpg')} alt='avatar' className='sidebar__avatar border shadow' />
             
-            <div className='sidebar__name fs-4 my-2'>
+            <div className='sidebar__name fs-5 my-2'>
                 <span className='my-text-primary'>Ergis</span> Gjergji
             </div>
 
-            <div className='sidebar__title fs-5 my-4 bg-light rounded-pill border'>
+            <div className='sidebar__title fs-6 my-4 bg-light rounded-pill border'>
                 Software Developer
             </div>
 
@@ -41,34 +42,38 @@ const Sidebar = () => {
 
             <div className='sidebar__socials mt-3 d-flex flex-row flex-wrap align-items-center justify-content-center'>
                 <a target='_blank' href={configuration.LinkedIn} className='mx-2' title='LinkedIn'>
-                    <FontAwesomeIcon icon={faLinkedinIn} size='2x' className='my-text-primary hoverEffect' />
+                    <FontAwesomeIcon icon={faLinkedinIn} size='lg' className='my-text-primary hoverEffect' />
                 </a>
                 <a target='_blank' href={configuration.Github} className='mx-2' title='Github'>
-                    <FontAwesomeIcon icon={faGithub} size='2x' className='my-text-primary hoverEffect' />
+                    <FontAwesomeIcon icon={faGithub} size='lg' className='my-text-primary hoverEffect' />
                 </a>
                 <a target='_blank' href={configuration.StackOverflow} className='mx-2' title='StackOverflow'>
-                    <FontAwesomeIcon icon={faStackOverflow} size='2x' className='my-text-primary hoverEffect' />
+                    <FontAwesomeIcon icon={faStackOverflow} size='lg' className='my-text-primary hoverEffect' />
                 </a>
             </div>
 
-            <div className='sidebar__contact mt-4 bg-light border'>
-                <div className='sidebar__item sidebar__location'>
-                    <FontAwesomeIcon icon={faLocationDot} className='sidebar__icon' /> {configuration.Location}
+            <div className='sidebar__contact d-flex flex-column align-items-center small justify-content-center my-4 px-1 py-3 gap-3 bg-light border'>
+                <div>
+                    <FontAwesomeIcon icon={faLocationDot} className='sidebar__icon' />
+                    <span> {configuration.Location} </span>
                 </div>
-                <div className='sidebar__item'>
-                    <FontAwesomeIcon icon={faEnvelope} className='sidebar__icon' /> {configuration.Email}
+                <div>
+                    <FontAwesomeIcon icon={faEnvelope} className='sidebar__icon' />
+                    <span> {configuration.Email} </span>
                 </div>
-                <div className='sidebar__item'>
-                    <FontAwesomeIcon icon={faPhone} className='sidebar__icon' /> {configuration.PhoneNumber}
+                <div>
+                    <FontAwesomeIcon icon={faPhone} className='sidebar__icon' />
+                    <span> {configuration.PhoneNumber} </span>
                 </div>
-                <div className='sidebar__item'>
-                    <FontAwesomeIcon icon={faSkype} className='sidebar__icon' /> {configuration.SkypeID}
+                <div>
+                    <FontAwesomeIcon icon={faSkype} className='sidebar__icon' />
+                    <span> {configuration.SkypeID} </span>
                 </div>
             </div>
 
-            <div className='sidebar__item'>
+            <div className='my-4'>
                 <button 
-                    className='btn btn-lg btn__email shadow border-0 text-white hoverEffect'
+                    className='btn btn-md btn__email shadow border-0 text-white hoverEffect'
                     onClick={handleSendMail}
                 >
                     <FontAwesomeIcon icon={faEnvelope} className='sidebar__icon' /> Email me

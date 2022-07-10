@@ -10,11 +10,11 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             
-            <div className='navbar__active'>
+            <div className='navbar__active fw-bold fs-5'>
                 {active}
             </div>
 
-            <div className='navbar__items mx-auto mx-sm-0 mt-2 mt-sm-0'>
+            <div className='navbar__items mx-auto mx-sm-0 mt-2 mt-sm-0 fs-6'>
                 {
                     routes.map((route, index) => (
                         <div key={index} className={`navbar__item mx-2 ${route === active ? 'my-text-primary' : ''}`} onClick={() => setActive(route)}>
