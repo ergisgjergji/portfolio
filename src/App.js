@@ -1,4 +1,6 @@
 import React from 'react';
+
+import AppRouter from './Router/AppRouter';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 
@@ -13,11 +15,9 @@ const App = () => {
           </div>
 
           <div className='col-12 col-lg-9 h-100 mt-4 mt-lg-0'>
-            <div className='app__main-content bg-white shadow h-100 rounded p-3'>
-
+            <div className='app__main-content overflow-auto bg-white shadow h-100 rounded'>
               <Navbar />
-              In progress...
-
+              <AppRouter />
             </div>
           </div>
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 
-import avatar from '../../assets/avatar.jpg';
+import avatar from '../../assets/images/avatar.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown, faLocationDot, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -14,14 +14,13 @@ import resume from '../../assets/resume.pdf';
 const Sidebar = () => {
 
     const handleSendMail = () => {
-        window.open('mailto:ergisgjergji@gmail.com')
+        window.open(`mailto:${configuration.Email}`)
     }
 
     return (
         <div className='app__sidebar shadow h-100 overflow-auto rounded p-2 text-center'>
             
-            {/* <img src={avatar} alt='avatar' className='sidebar__avatar border shadow' /> */}
-            <img src={require('../../assets/avatar.jpg')} alt='avatar' className='sidebar__avatar border shadow' />
+            <img src={avatar} alt='avatar' className='sidebar__avatar border shadow' />
             
             <div className='sidebar__name fs-5 my-2'>
                 <span className='my-text-primary'>Ergis</span> Gjergji
@@ -36,6 +35,7 @@ const Sidebar = () => {
                 target='_blank'
                 download='CV-Ergis Gjergji.pdf' 
                 className='btn btn-md my-bg-gradient hoverEffect' title='Click to download CV'
+                tabIndex={1}
             >
                 <FontAwesomeIcon icon={faFileArrowDown} size='lg' /> Download CV
             </a>
@@ -75,6 +75,7 @@ const Sidebar = () => {
                 <button 
                     className='btn btn-md btn__email shadow border-0 text-white hoverEffect'
                     onClick={handleSendMail}
+                    tabIndex="-1"
                 >
                     <FontAwesomeIcon icon={faEnvelope} className='sidebar__icon' /> Email me
                 </button>
