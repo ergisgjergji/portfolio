@@ -23,9 +23,9 @@ const AppRouter = (props) => {
                 <Resume />
             } />
 
-            <Route path={MyRoutes.Projects} element={
+            {/* <Route path={MyRoutes.Projects} element={
                 <Projects />
-            } />
+            } /> */}
 
       </Routes>
     )
