@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './index.css';
 
 import avatar from '../../assets/images/avatar.webp';

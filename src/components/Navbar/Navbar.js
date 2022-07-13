@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+import { motion } from 'framer-motion';
+
 import { MyRoutes } from '../../utils/constants';
 
 import './index.css';
