@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 
-import avatar from '../../assets/images/avatar.jpg';
+import avatar from '../../assets/images/avatar.webp';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown, faLocationDot, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
