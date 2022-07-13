@@ -1,0 +1,8 @@
+.progress-bar__wrapper {
+    background-image: var(--my-gradient-color);
+    white-space: normal;
+}
+
+.progress-bar__name {
+    vertical-align: text-top;
+}

@@ -1,27 +1,83 @@
-import frontend from '../assets/images/frontend.png';
-import backend from '../assets/images/backend.png';
-import api from '../assets/images/api.png';
-import database from '../assets/images/database.png';
+export const backend = [
+    {
+        name: "C#",
+        level: 90
+    },
+    {
+        name: ".NET Core",
+        level: 90
+    },
+    {
+        name: "MVC, Web API",
+        level: 90
+    },
+];
 
-export const skills = [
+export const frontend = [
     {
-        icon: frontend,
-        title: "Frontend Development",
-        description: "Frontend development using HTML, CSS, VanillaJS, jQuery, React JS."
+        name: "HTML/CSS",
+        level: 90
     },
     {
-        icon: backend,
-        title: "Backend Development",
-        description: ".NET/Core, MVC, Layered/Microservices architecture."
+        name: "JavaScript",
+        level: 90
     },
     {
-        icon: api,
-        title: "API Development",
-        description: "Develop robust REST API using .NET Core, Swagger."
+        name: "TypeScript",
+        level: 80
     },
     {
-        icon: database,
-        title: "Database Development",
-        description: "Experience in SQL Server; MySQL; MongoDB."
+        name: "jQuery",
+        level: 90
+    },
+    {
+        name: "ReactJS",
+        level: 90
+    },
+    {
+        name: "Redux",
+        level: 90
+    },
+    {
+        name: "Bootstrap; Tailwind CSS; Material UI; Kendo UI",
+        level: 100
+    },
+];
+
+export const databases = [
+    {
+        name: "MySQL",
+        level: 100
+    },
+    {
+        name: "MS SQL",
+        level: 100
+    },
+    {
+        name: "MongoDB",
+        level: 100
     }
-]
+];
+
+export const tools = [
+    {
+        name: "Git",
+        level: 100
+    },
+    {
+        name: "Azure DevOps",
+        level: 100
+    },
+    {
+        name: "Azure",
+        level: 100
+    },
+    {
+        name: "Postman",
+        level: 100
+    },
+    {
+        name: "Swagger",
+        level: 100
+    }
+];

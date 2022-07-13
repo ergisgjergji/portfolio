@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-import { skills } from '../../../utils/skills';
+import { services } from '../../../utils/services';
 
 import Highlight from '../../Highlight/Highlight';
 import SkillCard from '../../SkillCard/SkillCard';
@@ -26,13 +26,13 @@ const About = () => {
 
         <div className='row row-cols-1 row-cols-md-2 mb-4'>
         {
-          skills.map((skill, index) => (
+          services.map((service, index) => (
             <div key={index} className='col mb-3'>
               <SkillCard
                 className="hoverEffect"
-                icon={skill.icon} 
-                title={skill.title} 
-                description={skill.description}
+                icon={service.icon} 
+                title={service.title} 
+                description={service.description}
               />
             </div>
           ))

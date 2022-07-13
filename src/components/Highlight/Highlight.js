@@ -20,7 +20,7 @@ Highlight.propTypes = {
 };
 
 Highlight.defaultProps = {
-  text: "",
+  text: "-insert text-",
   spaced: true
 };
 
