@@ -1,10 +1,7 @@
 import React from 'react';
 import './index.css';
 
-import { backend, frontend, databases, tools } from '../../../utils/skills';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faBars, faListCheck, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { backend, frontend, databases, tools } from '../../../data/skills';
 
 import ResumeCard from '../../ResumeCard/ResumeCard';
 import ProgressBar from '../../ProgressBar/ProgressBar';

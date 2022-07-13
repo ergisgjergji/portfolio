@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-import { services } from '../../../utils/services';
+import { services } from '../../../data/services';
 
 import Highlight from '../../Highlight/Highlight';
 import SkillCard from '../../SkillCard/SkillCard';
