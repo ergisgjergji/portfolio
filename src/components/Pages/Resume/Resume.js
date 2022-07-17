@@ -75,7 +75,7 @@ const Resume = () => {
               Backend
             </div>
 
-            <div className='d-flex flex-column align-items-start gap-2 justify-content-center'>
+            <div className='d-flex flex-column align-items-start gap-2 justify-content-center px-2'>
             {
               backend.map((skill, index) => (
                 // <ProgressBar
@@ -83,8 +83,8 @@ const Resume = () => {
                 //   name={skill.name}
                 //   level={skill.level}
                 // />
-                <div>
-                  <Highlight key={index} text={skill.name} />
+                <div key={index}>
+                  <Highlight text={skill.name} />
                 </div>
               ))
             }
@@ -99,7 +99,7 @@ const Resume = () => {
               Databases
             </div>
 
-            <div className='d-flex flex-column align-items-start gap-2 justify-content-center'>
+            <div className='d-flex flex-column align-items-start gap-2 justify-content-center px-2'>
             {
               databases.map((skill, index) => (
                 // <ProgressBar
@@ -107,8 +107,8 @@ const Resume = () => {
                 //   name={skill.name}
                 //   level={skill.level}
                 // />
-                <div>
-                  <Highlight key={index} text={skill.name} />
+                <div key={index}>
+                  <Highlight text={skill.name} />
                 </div>
               ))
             }
@@ -123,7 +123,7 @@ const Resume = () => {
               Frontend
             </div>
 
-            <div className='d-flex flex-column align-items-start gap-2 justify-content-center'>
+            <div className='d-flex flex-column align-items-start gap-2 justify-content-center px-2'>
             {
               frontend.map((skill, index) => (
                 // <ProgressBar
@@ -131,8 +131,8 @@ const Resume = () => {
                 //   name={skill.name}
                 //   level={skill.level}
                 // />
-                <div>
-                  <Highlight key={index} text={skill.name} />
+                <div key={index}>
+                  <Highlight text={skill.name} />
                 </div>
               ))
             }
@@ -147,7 +147,7 @@ const Resume = () => {
               Tools
             </div>
 
-            <div className='d-flex flex-column align-items-start gap-2 justify-content-center'>
+            <div className='d-flex flex-column align-items-start gap-2 justify-content-center px-2'>
             {
               tools.map((skill, index) => (
                 // <ProgressBar
@@ -155,8 +155,8 @@ const Resume = () => {
                 //   name={skill.name}
                 //   level={skill.level}
                 // />
-                <div>
-                  <Highlight key={index} text={skill.name} />
+                <div key={index}>
+                  <Highlight text={skill.name} />
                 </div>
               ))
             }
